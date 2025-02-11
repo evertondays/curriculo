@@ -1,0 +1,88 @@
+body {
+    padding: 30px;
+    background-color: #ececec;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .banner {
+    width: 100%;
+    border-radius: 40px;
+    border: white solid 3px;
+}
+
+.header .profile {
+    width: 175px;
+    height: 175px;
+
+    margin-top: -85px;
+    border-radius: 100px;
+    border: white solid 3px;
+}
+
+.header .infos {
+    text-align: center;
+}
+
+.header .infos h1 {
+    font-weight: 800;
+    font-size: 30px;
+    color: cornflowerblue
+}
+
+.header .infos h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.content {
+    margin-top: 45px;
+    padding: 30px;
+}
+
+.content .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+
+.content .item b {
+    font-weight: bold;
+    color: cornflowerblue;
+    margin-right: 5px;
+}
+
+.content .item .info a {
+    font-style: italic;
+    color: rgb(1, 80, 226);
+}
+
+.content .item .info a:visited {
+    font-style: italic;
+    color: rgb(1, 5, 226);
+}
+
+.content .item .info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7px;
+    margin-left: 2px;
+}
+
+.line {
+    height: 2px;
+    width: calc(100% - 5px);
+    background-color: cornflowerblue;
+    margin: 20px 0;
+}
