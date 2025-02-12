@@ -1,0 +1,99 @@
+#content {
+    padding: 3rem;
+}
+
+.block {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+h1 {
+    color: var(--primary);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.text {
+    font-size: 1.45rem;
+    letter-spacing: .15rem;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.myself {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myself img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100rem;
+    object-fit: cover;
+    z-index: 100;
+}
+
+.myself .container {
+    width: 100%;
+    padding: 5rem 2rem 2rem 2rem;
+
+    background-color: var(--primary);
+    border-radius: 15px;
+
+    text-align: center;
+    color: white;
+
+    margin-top: -4rem;
+    z-index: 99;
+}
+
+.myself .container h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.myself .container h3 {
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+.top .profile {
+    margin-top: 2rem
+}
+
+@media (min-width: 865px) {
+    .top {
+        margin-top: 5rem;
+        flex-direction: row;
+    }
+
+    .top .myself {
+        max-width: 350px;
+    }
+
+    .top .profile {
+        margin-top: calc(200px - 4rem);
+        margin-left: 2rem;
+    }
+}
+
+.information {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text);
+    margin: 4rem 0 3rem 0;
+}
