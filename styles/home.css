@@ -1,7 +1,7 @@
 body {
     padding: 30px;
-    background-color: #ececec;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #efefef;
+    font-family: "Rubik", serif;;
 }
 
 .header {
@@ -33,7 +33,7 @@ body {
 .header .infos h1 {
     font-weight: 800;
     font-size: 30px;
-    color: cornflowerblue
+    color: #5271ff
 }
 
 .header .infos h3 {
@@ -54,12 +54,12 @@ body {
 .content .item h2 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: cornflowerblue;
+    color: #5271ff;
 }
 
 .content .item b {
     font-weight: bold;
-    color: cornflowerblue;
+    color: #5271ff;
     margin-right: 5px;
 }
 
@@ -83,6 +83,6 @@ body {
 .line {
     height: 2px;
     width: calc(100% - 5px);
-    background-color: cornflowerblue;
+    background-color: #5271ff;
     margin: 20px 0;
 }
