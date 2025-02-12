@@ -111,6 +111,12 @@ h2 {
 }
 
 /* Contact session */
+.contact {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
 
 .contact h1 {
     font-size: 1.5rem;
@@ -145,6 +151,11 @@ h2 {
         width: 100%;
         display: flex;
         flex-direction: row;
+    }
+
+    .contact {
+        background-color: transparent;
+        padding: 0;
     }
 }
 
