@@ -1,84 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/home.css">
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <title>Everton Dias - Currículo</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 </head>
-<body>
-    <div class="header">
-        <img src="assets/banner.jpg" class="banner"></img>
-        <img src="assets/me.jpg" class="profile"></img>
 
-        <div class="infos">
-            <h1>Everton Dias</h1>
-            <h3>Software Engineer - netLex</h3>
+<body>
+    <div id="content">
+        <div class="top">
+            <div class="myself">
+                <img src="assets/me.jpg" alt="Imagem de perfil de Everton Dias">
+                <div class="container">
+                    <h1>Everton Dias</h1>
+                    <h3>Software Engineer - netLex</h3>
+                </div>
+            </div>
+        </div>
+        <div class="profile block">
+            <h1>Sobre mim</h1>
+            <div class="text">
+                Sou um estudante de Ciência da Computação e estou sempre disposto a aprender coisas novas além de
+                aperfeiçoar meus conhecimentos com boas práticas de código.
+                <br>
+                Tenho experiência em desenvolvimento e manutenção de aplicações web, criação de APIs RESTful e
+                implementação de testes unitários e de integração.
+                <br>
+                Possuo técnico em Desenvolvimento de Sistemas e experiência em tecnologias de front-end e back-end,
+                atualmente busco novas experiencias de trabalho para poder evoluir minhas capacidades técnicas.
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Como me contatar:</h1>
+            <div class="group">
+                <h2>E-mail:</h2>
+                <div class="info">evertonsrdias@gmail.com</div>
+            </div>
+            <div class="group">
+                <h2>GitHub:</h2>
+                <a href="https://github.com/evertondays" target="_blank">github.com/evertondays</a>
+            </div>
+            <div class="group">
+                <h2>Linkedin:</h2>
+                <a href="https://www.linkedin.com/in/evertonsrdias/" target="_blank">linkedin.com/in/evertonsrdias</a>
+            </div>
+            <div class="group">
+                <h2>Endereço:</h2>
+                <div class="info">Vinhedo - São Paulo</div>
+            </div>
+            <div class="group">
+                <h2>Celular:</h2>
+                <div class="info">(19) 9 9318-0468</div>
+            </div>
+        </div>
+        <div class="information">
+            <div class="left">
+                <div class="block">
+                    <h1>Formação Educacional</h1>
+                    <h2>Ciência da Computação</h2>
+                    <div class="text">
+                        Faculdade UniAnchieta - Jundiaí<br>
+                        2021 - 12/2025
+                    </div>
+                    <br>
+                    <h2>Desenvolvimento de Sistemas</h2>
+                    <div class="text">
+                        Etec Vasco Antônio Venchiarutti - Jundiaí<br>
+                        Concluído em 12/2021
+                    </div>
+                </div>
+                <div class="block">
+                    <h1>Tecnologias</h1>
+                    <h2>Linguagens conhecidas</h2>
+                    <div class="text">
+                        JavaScript, PHP.
+                    </div>
+                    <br>
+                    <h2>Frameworks / Sistemas</h2>
+                    <div class="text">
+                        Angular, Laravel, React, ReactNative, NodeJS.
+                    </div>
+                    <h2>Banco de dados</h2>
+                    <div class="text">
+                        MySQL, MongoDB, Redis.
+                    </div>
+                    <h2>Outros</h2>
+                    <div class="text">
+                        Docker, Git, Elastic APM.
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="block">
+                    <h1>Projetos Pessoais</h1>
+                    <h2>ResolveAi!</h2>
+                    <div class="text">
+                        Um aplicativo que tem como objetivo integrar a população com o governo, ele reúne problemas
+                        cadastrados pelos próprios cidadãos relacionados a defeitos de infraestrutura nas cidades.
+                    </div>
+                    <br>
+                    <h2>Snotra Books</h2>
+                    <div class="text">
+                        Livraria digital feita com PHP, criado com mobile-first sendo 100% responsivo.
+                    </div>
+                    <h2>Music Player</h2>
+                    <div class="text">
+                        Player de música construido com React. Projeto criado para aprender um pouco mais do framework e
+                        do uso JavaScript no server-side.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="content">
-        <div class="contact item">
-            <h2>Contato</h2>
-            <div class="info">
-                <b>Email:</b> evertonsrdias@gmail.com
-            </div>
-            <div class="info">
-                <b>Celular:</b> (19) 99318-0468
-            </div>
-            <div class="info">
-                <b>Linkedin</b> <a href="https://www.linkedin.com/in/evertonsrdias">linkedin.com/in/evertonsrdias</a> 
-            </div>
-        </div>
+    <div class="line-container">
         <div class="line"></div>
-        <div class="education item">
-            <h2>Experiência</h2>
-            <div class="info">
-                <b>2023 até os dias atuais:</b> Engenheiro de Software Full Stack | netLex
-            </div>
-            <div class="info">
-                <b>2022:</b> Estágio | Desenvolvimento web | netLex
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="education item">
-            <h2>Educação</h2>
-            <div class="info">
-                <b>Ensino superior:</b> Ciência da Computação - UniAnchieta (cursando) 
-            </div>
-            <div class="info">
-                <b>Curso Técnico:</b> Desenvolvimento de Sistemas - ETEVAV (2019 à 2021)
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="hard-skills item">
-            <h2>Hard skills</h2>
-            <div class="info">
-                <b>Backend:</b> Desenvolvimento e manutenção de aplicação web utilizando Laravel (PHP) no CRM n°1 da América Latina.
-            </div>
-            <div class="info">
-                <b>Frotend:</b> Criação de páginas SPA interativos com grande complexidade de UI/UX.
-            </div>
-            <div class="info">
-                <b>Banco de Dados:</b> Criação e otimização de queries em banco de dados relacionais como o MySQl.
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="soft-skills item">
-            <h2>Soft skills</h2>
-            <div class="info">
-                <b>Trabalho em equipe:</b> Experiência com times de desenvolvimento agéis e projetos em scrum e kanban.
-            </div>
-        </div>
     </div>
 </body>
+
 </html>
