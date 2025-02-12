@@ -11,14 +11,32 @@
 h1 {
     color: var(--primary);
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
+}
+
+h2 {
+    color: black;
+    font-weight: 800;
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.text + h2 {
+    margin-top: 1.5rem;
+}
+
+.info {
+    font-size: 1.4rem;
 }
 
 .text {
     font-size: 1.45rem;
     letter-spacing: .15rem;
 }
+
+/* Picture and first block */
 
 .top {
     display: flex;
@@ -66,7 +84,7 @@ h1 {
     font-weight: 200;
 }
 
-.top .profile {
+.profile {
     margin-top: 2rem
 }
 
@@ -80,9 +98,53 @@ h1 {
         max-width: 350px;
     }
 
-    .top .profile {
-        margin-top: calc(200px - 4rem);
-        margin-left: 2rem;
+    .profile {
+        margin-top: calc(200px + 1rem);
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: max-content;
+        gap: 2rem;
+    }
+}
+
+/* Contact session */
+
+.contact h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact h2 {
+    margin-bottom: .5rem;
+    letter-spacing: 0px;
+}
+
+.contact  h2, a {
+    font-size: 1.45rem;
+}
+
+.contact .group + .group {
+    margin-top: 1rem;
+}
+
+.contact .info {
+    margin-top: .5rem;
+}
+
+.contact a {
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 865px) {
+    .information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -91,8 +153,35 @@ h1 {
     flex-direction: column-reverse;
 }
 
-.line {
+.information .block {
+    margin-top: 2rem;
+}
+
+@media (min-width: 865px) {
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: max-content;
+        gap: 2rem;
+    }
+
+    .information .left .block {
+        margin-bottom: 2rem;
+    }
+
+    .information .block {
+        margin-top: 0;
+    }
+}
+
+.line-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
     height: 1px;
     background-color: var(--text);
     margin: 4rem 0 3rem 0;
